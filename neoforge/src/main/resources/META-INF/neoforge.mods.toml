@@ -1,29 +1,28 @@
 modLoader = "javafml"
 loaderVersion = "[${loader_major},)"
-issueTrackerURL = "https://github.com/Luke100000/ImmersiveAircraft/issues"
+issueTrackerURL = "https://github.com/Lemonochrme/ImmersiveTrains/issues"
 license = "GPL-3.0-only"
 
 [[mixins]]
-config = "immersive_aircraft.mixins.json"
+config = "immersive_trains.mixins.json"
 
 [[mods]]
-modId = "immersive_aircraft"
+modId = "immersive_trains"
 version = "${version}"
-displayName = "Immersive Aircraft"
-displayURL = "https://www.curseforge.com/minecraft/mc-mods/immersive-aircraft"
-authors = "Luke100000"
-description = "A bunch of rustic aircraft to travel, transport, and explore!"
+displayName = "Immersive Trains"
+displayURL = "https://github.com/Lemonochrme/ImmersiveTrains"
+authors = "Lemonochrme"
+description = "A simple, vanilla-friendly train mod for Minecraft!"
 logoFile = "icon.png"
-itemIcon = "immersive_aircraft:biplane"
 
-[[dependencies.immersive_aircraft]]
+[[dependencies.immersive_trains]]
 modId = "minecraft"
 mandatory = true
 versionRange = "[${minecraft_version},)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.immersive_aircraft]]
+[[dependencies.immersive_trains]]
 modId = "neoforge"
 mandatory = true
 versionRange = "[${loader_major},)"

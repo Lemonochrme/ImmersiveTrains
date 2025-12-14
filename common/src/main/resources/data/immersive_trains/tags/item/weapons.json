@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "immersive_trains:rotary_cannon",
+    "immersive_trains:heavy_crossbow",
+    "immersive_trains:telescope",
+    "immersive_trains:bomb_bay"
+  ]
+}
