@@ -14,7 +14,6 @@ displayURL = "https://github.com/Lemonochrme/ImmersiveTrains"
 authors = "Lemonochrme"
 description = "A simple, vanilla-friendly train mod for Minecraft!"
 logoFile = "icon.png"
-itemIcon = "immersive_trains:biplane"
 
 [[dependencies.immersive_trains]]
 modId = "minecraft"
