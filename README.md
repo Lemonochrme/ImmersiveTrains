@@ -1,33 +1,50 @@
-# Immersive Aircraft
+# Immersive Trains
 
-This mod adds bunch of rustic aircraft to travel, transport, and explore! The aircraft have a strong focus on being
-vanilla-faithful and many details and functionalities, without being overly complicated.
+A simple, vanilla-friendly train mod for Minecraft 1.21.1 Fabric/NeoForge.
 
-[![Crowdin](https://badges.crowdin.net/immersive-collection/localized.svg)](https://crowdin.com/project/immersive-collection)
+This project is a fork of [Immersive Aircraft](https://github.com/Luke100000/ImmersiveAircraft) by Luke100000, repurposed to create a train mod instead of an aircraft mod.
 
-Hosted on
-[CurseForge](https://www.curseforge.com/minecraft/mc-mods/immersive-aircraft) and
-[Modrinth](https://modrinth.com/mod/immersive-aircraft)
+## Status
 
-# Contributors
+🚧 **Work in Progress** - This mod is currently in early development. The codebase is being refactored from the original Immersive Aircraft mod to support trains instead of aircraft.
 
-* Favouriteless (Added datapack support and exploding vehicle config)
-* stohun (Reworked entity textures)
-* 김작업 (Reworked icon textures)
-* Everyone who helped [to translate](https://crowdin.com/project/immersive-collection)
+## Goals
 
-# Addons
+- Create a simple, vanilla-faithful train system
+- Support both Fabric and NeoForge mod loaders
+- Provide a clean, maintainable codebase for future development
 
-Many helpful registries and generic functions are available to quickstart an addon.
+## Original Credits
 
-* `InventoryVehicleEntity` provides an abstract vehicle with inventory and datapack configuration.
-* `VehicleStat` provides a way to add custom stats to vehicles.
-* `VehicleInventoryDescription` provides a way to register custom slots.
-* `SlotRenderer` provides a way to render custom slots.
-* `JsonConfig` can be extended to have an own config options.
-* `NetworkHandler` and `Registration` can be used instead of e.g., Architectury to stay launcher independent.
+- **Luke100000** - Original Immersive Aircraft mod author
+- **Favouriteless** - Added datapack support and exploding vehicle config
+- **stohun** - Reworked entity textures
+- **김작업** - Reworked icon textures
 
-Check out existing addons for references:
+## License
 
-* [Man of Many Planes](https://github.com/Luke100000/Man-of-Many-Planes)
-* [Immersive Machinery](https://github.com/Luke100000/ImmersiveMachinery)
+GPL-3.0-only
+
+## Development
+
+This project uses Architectury to support multiple mod loaders. The project structure:
+
+- `common/` - Shared code between all platforms
+- `fabric/` - Fabric-specific code
+- `neoforge/` - NeoForge-specific code
+
+### Building
+
+```bash
+./gradlew build
+```
+
+### Core Architecture
+
+The vehicle system is built on a hierarchy:
+- `VehicleEntity` - Base vehicle with collision, passengers, damage handling
+- `DyeableVehicleEntity` - Adds dyeable color support
+- `InventoryVehicleEntity` - Adds inventory and weapon systems
+- `EngineVehicle` - Adds engine/fuel simulation
+
+Vehicles are data-driven using JSON configs in `data/immersive_trains/aircraft/`.

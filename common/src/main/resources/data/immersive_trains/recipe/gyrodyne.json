@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    "HPH",
+    " S "
+  ],
+  "key": {
+    "S": [
+      {
+        "item": "immersive_trains:sail"
+      }
+    ],
+    "H": [
+      {
+        "item": "immersive_trains:hull"
+      }
+    ],
+    "P": [
+      {
+        "item": "immersive_trains:propeller"
+      }
+    ]
+  },
+  "result": {
+    "id": "immersive_trains:gyrodyne"
+  }
+}
