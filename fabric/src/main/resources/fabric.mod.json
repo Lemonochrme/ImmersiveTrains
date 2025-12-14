@@ -1,39 +1,39 @@
 {
   "schemaVersion": 1,
-  "id": "immersive_aircraft",
+  "id": "immersive_trains",
   "version": "${version}",
-  "name": "Immersive Aircraft",
-  "description": "A bunch of rustic aircraft to travel, transport, and explore!\n",
+  "name": "Immersive Trains",
+  "description": "A bunch of vanilla-friendly trains to travel, transport, and explore!\n",
   "authors": [
-    "Luke100000"
+    "Lemonochrme"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/immersive-aircraft",
-    "sources": "https://github.com/Luke100000/ImmersiveAircraft",
-    "issues": "https://github.com/Luke100000/ImmersiveAircraft/issues"
+    "homepage": "https://github.com/Lemonochrme/ImmersiveTrains",
+    "sources": "https://github.com/Lemonochrme/ImmersiveTrains",
+    "issues": "https://github.com/Lemonochrme/ImmersiveTrains/issues"
   },
   "license": "GPL-3.0-only",
   "icon": "icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "immersive_aircraft.fabric.CommonFabric"
+      "immersive_trains.fabric.CommonFabric"
     ],
     "client": [
-      "immersive_aircraft.fabric.ClientFabric"
+      "immersive_trains.fabric.ClientFabric"
     ],
     "modmenu": [
-      "immersive_aircraft.config.ModMenuIntegration"
+      "immersive_trains.config.ModMenuIntegration"
     ],
     "jei_mod_plugin": [
-      "immersive_aircraft.combat.JEICCombat"
+      "immersive_trains.combat.JEICCombat"
     ],
     "rei_client": [
-      "immersive_aircraft.combat.REICombat"
+      "immersive_trains.combat.REICombat"
     ]
   },
   "mixins": [
-    "immersive_aircraft.mixins.json"
+    "immersive_trains.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.11.3",

@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"CAC",
+		"CHC",
+		"   "
+	],
+	"key": {
+		"A": [
+			{
+				"item": "immersive_trains:airship"
+			}
+		],
+		"C": [
+			{
+				"item": "minecraft:chest"
+			}
+		],
+		"H": [
+			{
+				"item": "immersive_trains:hull"
+			}
+		]
+	},
+	"result": {
+		"id": "immersive_trains:cargo_airship"
+	}
+}

@@ -1,33 +1,32 @@
-# Immersive Aircraft
+# Immersive Trains
 
-This mod adds bunch of rustic aircraft to travel, transport, and explore! The aircraft have a strong focus on being
+This mod adds bunch of vanilla-friendly trains to travel, transport, and explore! The trains have a strong focus on being
 vanilla-faithful and many details and functionalities, without being overly complicated.
 
-[![Crowdin](https://badges.crowdin.net/immersive-collection/localized.svg)](https://crowdin.com/project/immersive-collection)
+**Note:** This is a work-in-progress mod forked from [Immersive Aircraft](https://github.com/Luke100000/ImmersiveAircraft) as a base for train development. Currently contains aircraft entities that will be replaced with trains in future updates.
 
-Hosted on
-[CurseForge](https://www.curseforge.com/minecraft/mc-mods/immersive-aircraft) and
-[Modrinth](https://modrinth.com/mod/immersive-aircraft)
+Hosted on [GitHub](https://github.com/Lemonochrme/ImmersiveTrains)
 
-# Contributors
+# Original Contributors (Immersive Aircraft)
 
+* Luke100000 (Original author)
 * Favouriteless (Added datapack support and exploding vehicle config)
 * stohun (Reworked entity textures)
 * 김작업 (Reworked icon textures)
 * Everyone who helped [to translate](https://crowdin.com/project/immersive-collection)
 
-# Addons
+# Development
 
-Many helpful registries and generic functions are available to quickstart an addon.
+This mod is currently being transformed from Immersive Aircraft to support trains instead of aircraft.
+The core framework and architecture remain the same, providing:
 
-* `InventoryVehicleEntity` provides an abstract vehicle with inventory and datapack configuration.
-* `VehicleStat` provides a way to add custom stats to vehicles.
-* `VehicleInventoryDescription` provides a way to register custom slots.
-* `SlotRenderer` provides a way to render custom slots.
-* `JsonConfig` can be extended to have an own config options.
-* `NetworkHandler` and `Registration` can be used instead of e.g., Architectury to stay launcher independent.
+* `InventoryVehicleEntity` - abstract vehicle with inventory and datapack configuration
+* `VehicleStat` - custom stats for vehicles
+* `VehicleInventoryDescription` - custom slot registration
+* `SlotRenderer` - custom slot rendering
+* `JsonConfig` - extensible config options
+* `NetworkHandler` and `Registration` - launcher-independent helpers
 
-Check out existing addons for references:
+# Original Base
 
-* [Man of Many Planes](https://github.com/Luke100000/Man-of-Many-Planes)
-* [Immersive Machinery](https://github.com/Luke100000/ImmersiveMachinery)
+Forked from [Immersive Aircraft](https://github.com/Luke100000/ImmersiveAircraft) by Luke100000
