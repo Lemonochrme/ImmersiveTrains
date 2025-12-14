@@ -178,6 +178,13 @@ All models, textures, sounds, and other assets retained:
 - Sounds (can be reused for trains)
 - Object files (.bbmodel)
 
+### Placeholder Content
+The following items remain aircraft-themed as placeholders:
+- **Items:** biplane, gyrodyne, quadrocopter, airship, cargo_airship, warship, bamboo_hopper
+- **Tags:** `data/immersive_trains/tags/item/vehicles.json` contains aircraft items (renamed from aircraft.json)
+- **Icon:** NeoForge mod icon still references biplane (noted with TODO comment)
+- **Note:** These will be replaced with train-specific content in future development
+
 ### Core Architecture
 The underlying framework is unchanged:
 - Multi-loader architecture (Fabric + NeoForge)
