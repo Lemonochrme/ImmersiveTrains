@@ -8,6 +8,10 @@ import net.minecraft.resources.ResourceLocation;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Registry for weapon renderers.
+ * Kept as minimal infrastructure for potential future train-mounted equipment.
+ */
 public class WeaponRendererRegistry {
     public static final Map<ResourceLocation, WeaponRenderer<? extends Weapon>> REGISTRY = new HashMap<>();
 
@@ -16,10 +20,7 @@ public class WeaponRendererRegistry {
     }
 
     static {
-        register(Main.locate("rotary_cannon"), new SimpleWeaponRenderer("rotary_cannon"));
-        register(Main.locate("heavy_crossbow"), new SimpleWeaponRenderer("heavy_crossbow"));
-        register(Main.locate("telescope"), new SimpleWeaponRenderer("telescope"));
-        register(Main.locate("bomb_bay"), new SimpleWeaponRenderer("bomb_bay"));
+        // Weapon renderer registrations removed - no weapons needed for train prototype
     }
 
     public static void bootstrap() {

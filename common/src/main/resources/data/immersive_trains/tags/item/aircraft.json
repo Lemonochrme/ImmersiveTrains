@@ -1,12 +1,6 @@
 {
   "replace": false,
   "values": [
-    "immersive_trains:biplane",
-    "immersive_trains:gyrodyne",
-    "immersive_trains:quadrocopter",
-    "immersive_trains:airship",
-    "immersive_trains:cargo_airship",
-    "immersive_trains:warship",
-    "immersive_trains:bamboo_hopper"
+    "immersive_trains:airship"
   ]
 }
