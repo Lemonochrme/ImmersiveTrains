@@ -75,10 +75,10 @@ public class NeoForgeBusEvents {
         if (upgrade != null) {
             List<Component> tooltip = event.getToolTip();
 
-            tooltip.add(Component.translatable("item.immersive_aircraft.item.upgrade").withStyle(ChatFormatting.GRAY).withStyle(ChatFormatting.ITALIC));
+            tooltip.add(Component.translatable("item.immersive_trains.item.upgrade").withStyle(ChatFormatting.GRAY).withStyle(ChatFormatting.ITALIC));
 
             for (Map.Entry<VehicleStat, Float> entry : upgrade.getAll().entrySet()) {
-                tooltip.add(Component.translatable("immersive_aircraft.upgrade." + entry.getKey().name().toLowerCase(Locale.ROOT),
+                tooltip.add(Component.translatable("immersive_trains.upgrade." + entry.getKey().name().toLowerCase(Locale.ROOT),
                         fmt.format(entry.getValue() * 100)
                 ).withStyle(entry.getValue() * (entry.getKey().positive() ? 1 : -1) > 0 ? ChatFormatting.GREEN : ChatFormatting.RED));
             }

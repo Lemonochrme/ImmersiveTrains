@@ -20,7 +20,7 @@ public class WeaponItem extends DescriptionItem {
 
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext ctx, List<Component> tooltips, TooltipFlag flags) {
-        tooltips.add(Component.translatable("item.immersive_aircraft.item.weapon").withStyle(ChatFormatting.GRAY));
+        tooltips.add(Component.translatable("item.immersive_trains.item.weapon").withStyle(ChatFormatting.GRAY));
 
         super.appendHoverText(stack, ctx, tooltips, flags);
     }

@@ -50,10 +50,10 @@ public class KeyBindings {
 
     private static KeyMapping newFallbackKey(String name, Supplier<KeyMapping> fallback) {
         KeyMapping key = new FallbackKeyMapping(
-                "key.immersive_aircraft." + name,
+                "key.immersive_trains." + name,
                 InputConstants.Type.KEYSYM,
                 fallback,
-                "itemGroup.immersive_aircraft.immersive_aircraft_tab"
+                "itemGroup.immersive_trains.immersive_trains_tab"
         );
         list.add(key);
         return key;
@@ -61,10 +61,10 @@ public class KeyBindings {
 
     private static KeyMapping newKey(String name, int code) {
         KeyMapping key = new KeyMapping(
-                "key.immersive_aircraft." + name,
+                "key.immersive_trains." + name,
                 InputConstants.Type.KEYSYM,
                 code,
-                "itemGroup.immersive_aircraft.immersive_aircraft_tab"
+                "itemGroup.immersive_trains.immersive_trains_tab"
         );
         list.add(key);
         return key;
@@ -76,10 +76,10 @@ public class KeyBindings {
 
     private static KeyMapping newMultiKey(String name, int defaultKey, InputConstants.Type type) {
         KeyMapping key = new MultiKeyMapping(
-                "key.immersive_aircraft." + name,
+                "key.immersive_trains." + name,
                 type,
                 defaultKey,
-                "itemGroup.immersive_aircraft.immersive_aircraft_tab"
+                "itemGroup.immersive_trains.immersive_trains_tab"
         );
         list.add(key);
         return key;

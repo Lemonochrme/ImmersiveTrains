@@ -1,4 +1,4 @@
-package immersive_aircraft.network;
+package immersive_trains.network;
 
 import immersive_trains.network.s2c.FireResponse;
 import immersive_trains.network.s2c.InventoryUpdateMessage;

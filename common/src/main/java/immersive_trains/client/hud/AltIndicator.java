@@ -9,7 +9,7 @@ import net.minecraft.world.phys.Vec3;
 import java.util.Iterator;
 import java.util.stream.IntStream;
 
-import static immersive_aircraft.client.hud.Colors.*;
+import static immersive_trains.client.hud.Colors.*;
 
 public class AltIndicator implements Indicator {
     public static final AltIndicator INSTANCE = new AltIndicator();

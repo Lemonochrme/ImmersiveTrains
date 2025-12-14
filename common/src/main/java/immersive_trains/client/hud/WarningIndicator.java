@@ -10,7 +10,7 @@ import net.minecraft.world.level.block.NoteBlock;
 
 import java.util.EnumMap;
 
-import static immersive_aircraft.client.hud.Colors.*;
+import static immersive_trains.client.hud.Colors.*;
 
 public class WarningIndicator implements Indicator {
     public static final WarningIndicator INSTANCE = new WarningIndicator();

@@ -1,4 +1,4 @@
-package immersive_aircraft.resources.bbmodel;
+package immersive_trains.resources.bbmodel;
 
 public class BBFace {
     public final BBVertex[] vertices;

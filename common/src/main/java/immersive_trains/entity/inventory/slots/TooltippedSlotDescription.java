@@ -18,6 +18,6 @@ public abstract class TooltippedSlotDescription extends SlotDescription {
     }
 
     public Optional<List<Component>> getToolTip() {
-        return Optional.of(List.of(Component.translatable("immersive_aircraft.slot." + type().toLowerCase(Locale.ROOT))));
+        return Optional.of(List.of(Component.translatable("immersive_trains.slot." + type().toLowerCase(Locale.ROOT))));
     }
 }

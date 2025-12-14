@@ -9,7 +9,7 @@ import net.minecraft.util.FastColor;
 import java.util.Iterator;
 import java.util.stream.IntStream;
 
-import static immersive_aircraft.client.hud.Colors.*;
+import static immersive_trains.client.hud.Colors.*;
 
 public class AzimuthIndicator implements Indicator {
     public static final AzimuthIndicator INSTANCE = new AzimuthIndicator();

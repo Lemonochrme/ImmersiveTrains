@@ -8,7 +8,7 @@ import immersive_trains.resources.bbmodel.BBObject;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
-import static immersive_aircraft.client.render.entity.renderer.utils.BBModelRenderer.renderObjectInner;
+import static immersive_trains.client.render.entity.renderer.utils.BBModelRenderer.renderObjectInner;
 
 public abstract class DyeableVehicleEntityRenderer<T extends DyeableVehicleEntity> extends VehicleEntityRenderer<T> {
     public DyeableVehicleEntityRenderer(EntityRendererProvider.Context context) {

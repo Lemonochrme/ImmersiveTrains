@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
-import static immersive_aircraft.resources.bbmodel.BBTexture.MISSING;
+import static immersive_trains.resources.bbmodel.BBTexture.MISSING;
 
 public class BBModel {
     public final BBMeta meta;

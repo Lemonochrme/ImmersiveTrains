@@ -1,3 +1,17 @@
+# Immersive Trains - Changelog
+
+## Initial Fork (1.21.1-SNAPSHOT)
+
+* Forked from Immersive Aircraft by Luke100000
+* Rebranded mod from `immersive_aircraft` to `immersive_trains`
+* Updated all namespaces, package names, and identifiers
+* Prepared boilerplate for future train development
+* Currently contains aircraft entities as placeholders (to be replaced with trains)
+
+---
+
+## Previous History (From Immersive Aircraft)
+
 # 1.4.0
 
 * Added mechanical dials and hud (Thanks donmor!)

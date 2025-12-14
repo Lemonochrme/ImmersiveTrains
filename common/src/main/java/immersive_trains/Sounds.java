@@ -1,6 +1,6 @@
 package immersive_trains;
 
-import immersive_aircraft.cobalt.registration.Registration;
+import immersive_trains.cobalt.registration.Registration;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;

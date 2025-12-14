@@ -41,7 +41,7 @@ public abstract class PlayerEntityMixin extends Entity {
     }
 
     @Inject(method = "getDestroySpeed", at = @At("RETURN"), cancellable = true)
-    public void immersive_aircraft$getDestroySpeed(CallbackInfoReturnable<Float> cir) {
+    public void immersive_trains$getDestroySpeed(CallbackInfoReturnable<Float> cir) {
         if (this.getRootVehicle() instanceof VehicleEntity) {
             cir.setReturnValue(cir.getReturnValueF() * 5.0f);
         }

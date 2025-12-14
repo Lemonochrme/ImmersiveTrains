@@ -1,4 +1,4 @@
-package immersive_aircraft.network.s2c;
+package immersive_trains.network.s2c;
 
 import immersive_trains.Main;
 import immersive_trains.cobalt.network.Message;

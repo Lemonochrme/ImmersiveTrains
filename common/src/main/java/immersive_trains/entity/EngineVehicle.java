@@ -171,14 +171,14 @@ public abstract class EngineVehicle extends InventoryVehicleEntity {
                     float utilization = getFuelUtilization();
                     if (utilization > 0 && isFuelLow()) {
                         if (lastFuelState != FuelState.LOW) {
-                            player.displayClientMessage(Component.translatable("immersive_aircraft." + getFuelType() + ".low"), true);
+                            player.displayClientMessage(Component.translatable("immersive_trains." + getFuelType() + ".low"), true);
                             lastFuelState = FuelState.LOW;
                         }
                     } else if (utilization > 0) {
                         lastFuelState = FuelState.FUELED;
                     } else {
                         if (lastFuelState != FuelState.EMPTY) {
-                            player.displayClientMessage(Component.translatable("immersive_aircraft." + getFuelType() + "." + (lastFuelState == FuelState.FUELED ? "out" : "none")), true);
+                            player.displayClientMessage(Component.translatable("immersive_trains." + getFuelType() + "." + (lastFuelState == FuelState.FUELED ? "out" : "none")), true);
                             lastFuelState = FuelState.EMPTY;
                         }
                     }

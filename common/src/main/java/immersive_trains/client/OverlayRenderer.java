@@ -16,7 +16,7 @@ import net.minecraft.util.FastColor.ARGB32;
 
 import java.util.stream.IntStream;
 
-import static immersive_aircraft.client.hud.Colors.colorFG;
+import static immersive_trains.client.hud.Colors.colorFG;
 
 public class OverlayRenderer {
     public static final OverlayRenderer INSTANCE = new OverlayRenderer();

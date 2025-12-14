@@ -14,7 +14,7 @@ import net.minecraft.world.item.ItemStack;
 import org.joml.Vector3f;
 import org.joml.Vector4f;
 
-import static immersive_aircraft.Entities.BULLET;
+import static immersive_trains.Entities.BULLET;
 
 public class RotaryCannon extends BulletWeapon {
     private final RotationalManager rotationalManager = new RotationalManager(this);

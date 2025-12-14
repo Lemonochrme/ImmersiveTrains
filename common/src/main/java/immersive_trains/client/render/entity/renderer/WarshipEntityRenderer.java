@@ -8,7 +8,7 @@ import immersive_trains.resources.bbmodel.BBMesh;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
 
-import static immersive_aircraft.client.render.entity.renderer.utils.BBModelRenderer.renderSailObject;
+import static immersive_trains.client.render.entity.renderer.utils.BBModelRenderer.renderSailObject;
 
 public class WarshipEntityRenderer<T extends WarshipEntity> extends AirshipEntityRenderer<T> {
     private static final ResourceLocation ID = Main.locate("warship");

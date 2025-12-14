@@ -485,7 +485,7 @@ public abstract class VehicleEntity extends Entity {
                         player.setJumping(false);
                     } else {
                         lastTriedToExit = tickCount;
-                        player.displayClientMessage(Component.translatable("immersive_aircraft.tried_dismount"), true);
+                        player.displayClientMessage(Component.translatable("immersive_trains.tried_dismount"), true);
                     }
                 }
 
@@ -683,7 +683,7 @@ public abstract class VehicleEntity extends Entity {
                 repair(Config.getInstance().repairSpeed);
 
                 // Repair message
-                MutableComponent component = Component.translatable("immersive_aircraft.repair", (int) (getHealth() * 100.0f));
+                MutableComponent component = Component.translatable("immersive_trains.repair", (int) (getHealth() * 100.0f));
                 if (getHealth() < 0.33) {
                     component.withStyle(ChatFormatting.RED);
                 } else if (getHealth() < 0.66) {
@@ -710,7 +710,7 @@ public abstract class VehicleEntity extends Entity {
             return InteractionResult.CONSUME;
         }
         if (!isValidDimension()) {
-            player.displayClientMessage(Component.translatable("immersive_aircraft.invalid_dimension"), true);
+            player.displayClientMessage(Component.translatable("immersive_trains.invalid_dimension"), true);
             return InteractionResult.FAIL;
         }
         if (player.isSecondaryUseActive()) {

@@ -47,7 +47,7 @@ public class BombBay extends BulletWeapon {
 
         ItemStack stack = getAmmoStack();
         String string = stack != null ? BuiltInRegistries.ITEM.getKey(stack.getItem()).toString() : "minecraft:tnt";
-        String identifier = Config.getInstance().bombBayEntity.getOrDefault(string, "immersive_aircraft:tiny_tnt");
+        String identifier = Config.getInstance().bombBayEntity.getOrDefault(string, "immersive_trains:tiny_tnt");
         CompoundTag compoundTag = new CompoundTag();
         compoundTag.putString("id", identifier);
         compoundTag.putInt(TAG_FUSE, 80);

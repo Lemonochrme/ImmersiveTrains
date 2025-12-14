@@ -1,4 +1,4 @@
-package immersive_aircraft.fabric;
+package immersive_trains.fabric;
 
 import immersive_trains.ClientMain;
 import immersive_trains.ItemColors;
@@ -49,10 +49,10 @@ public final class ClientFabric implements ClientModInitializer {
     private void itemTooltipCallback(ItemStack stack, Item.TooltipContext tooltipContext, TooltipFlag tooltipFlag, List<Component> tooltip) {
         VehicleUpgrade upgrade = VehicleUpgradeRegistry.INSTANCE.getUpgrade(stack.getItem());
         if (upgrade != null) {
-            tooltip.add(Component.translatable("item.immersive_aircraft.item.upgrade").withStyle(ChatFormatting.GRAY));
+            tooltip.add(Component.translatable("item.immersive_trains.item.upgrade").withStyle(ChatFormatting.GRAY));
 
             for (Map.Entry<VehicleStat, Float> entry : upgrade.getAll().entrySet()) {
-                tooltip.add(Component.translatable("immersive_aircraft.upgrade." + entry.getKey().name().toLowerCase(Locale.ROOT),
+                tooltip.add(Component.translatable("immersive_trains.upgrade." + entry.getKey().name().toLowerCase(Locale.ROOT),
                         fmt.format(entry.getValue() * 100)
                 ).withStyle(entry.getValue() * (entry.getKey().positive() ? 1 : -1) > 0 ? ChatFormatting.GREEN : ChatFormatting.RED));
             }

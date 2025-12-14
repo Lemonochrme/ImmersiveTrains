@@ -46,7 +46,7 @@ public class VehicleItem extends DescriptionItem {
         ItemStack itemStack = user.getItemInHand(hand);
         BlockHitResult hitResult = getPlayerPOVHitResult(world, user, onWater ? ClipContext.Fluid.ANY : ClipContext.Fluid.NONE);
         if (((HitResult) hitResult).getType() == HitResult.Type.MISS) {
-            error(user, "immersive_aircraft.tooltip.no_target");
+            error(user, "immersive_trains.tooltip.no_target");
             return InteractionResultHolder.pass(itemStack);
         }
 
@@ -60,7 +60,7 @@ public class VehicleItem extends DescriptionItem {
             entity.setYRot(user.getYRot());
 
             if (!world.noCollision(entity, entity.getBoundingBox())) {
-                error(user, "immersive_aircraft.tooltip.no_space");
+                error(user, "immersive_trains.tooltip.no_space");
                 return InteractionResultHolder.fail(itemStack);
             }
 
@@ -90,7 +90,7 @@ public class VehicleItem extends DescriptionItem {
 
         ItemContainerContents data = stack.get(DataComponents.CONTAINER);
         if (data != null) {
-            tooltips.add(Component.translatable("immersive_aircraft.tooltip.inventory", Iterables.size(data.nonEmptyItems())));
+            tooltips.add(Component.translatable("immersive_trains.tooltip.inventory", Iterables.size(data.nonEmptyItems())));
         }
     }
 }

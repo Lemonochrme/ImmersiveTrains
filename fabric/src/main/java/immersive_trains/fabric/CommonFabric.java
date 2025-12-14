@@ -1,12 +1,12 @@
 package immersive_trains.fabric;
 
-import immersive_aircraft.*;
-import immersive_aircraft.cobalt.network.NetworkHandler;
-import immersive_aircraft.fabric.cobalt.network.NetworkHandlerImpl;
-import immersive_aircraft.fabric.cobalt.registration.CobaltFuelRegistryImpl;
-import immersive_aircraft.fabric.cobalt.registration.RegistrationImpl;
-import immersive_aircraft.network.s2c.AircraftDataMessage;
-import immersive_aircraft.network.s2c.VehicleUpgradesMessage;
+import immersive_trains.*;
+import immersive_trains.cobalt.network.NetworkHandler;
+import immersive_trains.fabric.cobalt.network.NetworkHandlerImpl;
+import immersive_trains.fabric.cobalt.registration.CobaltFuelRegistryImpl;
+import immersive_trains.fabric.cobalt.registration.RegistrationImpl;
+import immersive_trains.network.s2c.AircraftDataMessage;
+import immersive_trains.network.s2c.VehicleUpgradesMessage;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
