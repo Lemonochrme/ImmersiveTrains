@@ -10,6 +10,10 @@ import net.minecraft.world.item.ItemStack;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Registry for weapon constructors.
+ * Kept as minimal infrastructure for potential future train-mounted equipment.
+ */
 public class WeaponRegistry {
     public static final Map<ResourceLocation, WeaponConstructor> REGISTRY = new HashMap<>();
 
@@ -18,10 +22,7 @@ public class WeaponRegistry {
     }
 
     static {
-        register(Main.locate("rotary_cannon"), RotaryCannon::new);
-        register(Main.locate("heavy_crossbow"), HeavyCrossbow::new);
-        register(Main.locate("telescope"), Telescope::new);
-        register(Main.locate("bomb_bay"), BombBay::new);
+        // Weapon registrations removed - no weapons needed for train prototype
     }
 
     public static void bootstrap() {

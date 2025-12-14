@@ -3,13 +3,11 @@ package immersive_trains.entity;
 import immersive_trains.WeaponRegistry;
 import immersive_trains.cobalt.network.NetworkHandler;
 import immersive_trains.config.Config;
-import immersive_trains.data.VehicleDataLoader;
 import immersive_trains.entity.inventory.SparseSimpleInventory;
 import immersive_trains.entity.inventory.VehicleInventoryDescription;
 import immersive_trains.entity.inventory.slots.SlotDescription;
 import immersive_trains.entity.misc.VehicleProperties;
 import immersive_trains.entity.misc.WeaponMount;
-import immersive_trains.entity.weapon.Telescope;
 import immersive_trains.entity.weapon.Weapon;
 import immersive_trains.item.WeaponItem;
 import immersive_trains.item.upgrade.VehicleStat;
@@ -334,14 +332,7 @@ public abstract class InventoryVehicleEntity extends DyeableVehicleEntity implem
     }
 
     public boolean isScoping() {
-        Collection<List<Weapon>> values = getWeapons().values();
-        for (List<Weapon> weapons : values) {
-            for (Weapon weapon : weapons) {
-                if (weapon instanceof Telescope telescope && telescope.isScoping()) {
-                    return true;
-                }
-            }
-        }
+        // Simplified - no telescope/scoping functionality in minimal train prototype
         return false;
     }
 

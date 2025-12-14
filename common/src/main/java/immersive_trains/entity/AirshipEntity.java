@@ -6,6 +6,7 @@ import immersive_trains.entity.misc.TrailDescriptor;
 import immersive_trains.item.upgrade.VehicleStat;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.util.Mth;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.Level;
@@ -14,7 +15,11 @@ import org.joml.Matrix4f;
 import org.joml.Vector3f;
 import org.joml.Vector4f;
 
-public class AirshipEntity extends Rotorcraft {
+/**
+ * Basic vehicle entity - serves as the single vehicle for the train prototype.
+ * Provides simple engine-driven movement with vertical and horizontal control.
+ */
+public class AirshipEntity extends AircraftEntity {
     public AirshipEntity(EntityType<? extends AircraftEntity> entityType, Level world) {
         super(entityType, world, true);
     }
@@ -36,6 +41,40 @@ public class AirshipEntity extends Rotorcraft {
     @Override
     protected double getDefaultGravity() {
         return wasTouchingWater ? -0.04f : (1.0f - getEnginePower()) * super.getDefaultGravity();
+    }
+
+    // Rotorcraft-style direction methods - horizontal only
+    @Override
+    public Vector3f getForwardDirection() {
+        return new Vector3f(
+                Mth.sin(-getYRot() * ((float) Math.PI / 180)),
+                0.0f,
+                Mth.cos(getYRot() * ((float) Math.PI / 180))
+        ).normalize();
+    }
+
+    @Override
+    public Vector3f getRightDirection() {
+        return new Vector3f(
+                Mth.cos(-getYRot() * ((float) Math.PI / 180)),
+                0.0f,
+                Mth.sin(getYRot() * ((float) Math.PI / 180))
+        ).normalize();
+    }
+
+    // Rotorcraft-style power conversion - horizontal movement only
+    @Override
+    protected void convertPower(Vec3 direction) {
+        Vec3 velocity = getDeltaMovement().multiply(1.0f, 0.0f, 1.0f);
+        double drag = Math.abs(direction.dot(velocity.normalize()));
+        Vec3 newVelocity = velocity.normalize()
+                .lerp(direction, getProperties().get(VehicleStat.LIFT))
+                .scale(velocity.length() * (drag * getProperties().get(VehicleStat.FRICTION) + (1.0 - getProperties().get(VehicleStat.FRICTION))));
+        setDeltaMovement(
+                newVelocity.x,
+                getDeltaMovement().y,
+                newVelocity.z
+        );
     }
 
     @Override

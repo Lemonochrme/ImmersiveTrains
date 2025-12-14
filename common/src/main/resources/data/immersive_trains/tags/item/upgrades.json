@@ -1,16 +1,5 @@
 {
   "replace": false,
   "values": [
-    "immersive_trains:enhanced_propeller",
-    "immersive_trains:eco_engine",
-    "immersive_trains:nether_engine",
-    "immersive_trains:steel_boiler",
-    "immersive_trains:industrial_gears",
-    "immersive_trains:sturdy_pipes",
-    "immersive_trains:gyroscope",
-    "immersive_trains:gyroscope_hud",
-    "immersive_trains:gyroscope_dials",
-    "immersive_trains:hull_reinforcement",
-    "immersive_trains:improved_landing_gear"
   ]
 }
