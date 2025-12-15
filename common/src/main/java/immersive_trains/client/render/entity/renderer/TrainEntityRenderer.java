@@ -8,7 +8,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
 
 public class TrainEntityRenderer<T extends TrainEntity> extends AircraftEntityRenderer<T> {
-    private static final ResourceLocation ID = Main.locate("biplane");
+    private static final ResourceLocation ID = Main.locate("train");
 
     private final ModelPartRenderHandler<T> model = new ModelPartRenderHandler<T>()
             .add("banners", this::renderBanners);
